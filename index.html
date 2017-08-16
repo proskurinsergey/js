@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<script src="js/jquery-3.2.1.min.js"></script>
+</head>
+<body>
+	<script type="text/javascript">
+
+
+        var bn95 = 25;
+        var bn92 = 23;
+        var bn98 = 28;
+        var marka = prompt("Какой марки бензина будете заправлять? (Бн-95) (Бн-92) (Бн-98)","");
+        if 
+        	( marka === "95")
+
+        {
+           var price = (confirm("Цена за 1литр = 25грн Будете заправлять?"));
+           var litra = prompt("Сколько литров вам заправить?","");	
+        	 bn95 *= litra;
+            alert(" Общая сумма ( "+ litra +"лт  =  "+ bn95 +"грн)" ); 
+            var bonus = prompt("Хотите Бонус? (да/нет?)","");
+            if (bonus === "да") 
+            var rashod = prompt("Напишите, какой расход бензина, вашего автомобиля, на 100км?)", "");
+        		 bn95 /= litra;
+        		  bn95 *= rashod;
+        		  alert(" Отчет ( "+ rashod +"лт Цена за 1л = 25грн, Итого  "+ bn95 +"грн  стоит проехать 100км)");
+         
+        }
+
+       
+          else if 
+          	( marka == "92") 
+          {
+        	 var price = (confirm("Цена за 1литр = 23грн Будете заправлять?"));
+           var litra = prompt("Сколько литров вам заправить?","");	
+        	 bn92 *= litra;
+            alert(" Общая сумма ( "+ litra +"лт  =  "+ bn92 +"грн)" ); 
+            var bonus = prompt("Хотите Бонус? (да/нет?)","");
+            if (bonus === "да") 
+            var rashod = prompt("Напишите, какой расход бензина, вашего автомобиля, на 100км?)", "");
+        		 bn92 /= litra;
+        		  bn92 *= rashod;
+        		  alert(" Отчет ( "+ rashod +"лт Цена за 1л = 23грн, Итого  "+ bn92 +"грн  стоит проехать 100км)");
+
+        }
+
+            else if ( marka == "98"){
+        	var price = (confirm("Цена за 1литр = 28грн Будете заправлять?"));
+            var litra = prompt("Сколько литров вам заправить?","");	
+        	 bn98 *= litra;
+            alert(" Общая сумма ( "+ litra +"лт  =  "+ bn98 +"грн)" ); 
+            var bonus = prompt("Хотите Бонус? (да/нет?)","");
+            if (bonus === "да") 
+            var rashod = prompt("Напишите, какой расход бензина, вашего автомобиля, на 100км?)", "");
+        		 bn98 /= litra;
+        		  bn98 *= rashod;
+        		  alert(" Отчет ( "+ rashod +"лт Цена за 1л = 28грн, Итого  "+ bn98 +"грн  стоит проехать 100км)");
+        }
+
+        
+       else {
+           alert(" Проверте правильность написания! " );
+        }
+
+	</script>
+
+</body>
+</html>
